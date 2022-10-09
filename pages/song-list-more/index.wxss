@@ -1,0 +1,13 @@
+.all-list{
+  padding: 0 24rpx;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 24rpx;
+}
+.list-item{
+  width: 49%;
+  margin-bottom: 38rpx;
+}

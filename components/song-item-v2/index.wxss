@@ -1,0 +1,28 @@
+
+.song-info{
+  display: flex;
+  align-items: center;
+  margin-bottom: 26rpx;
+}
+.index{
+
+  width: 60rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+.info{
+  flex:1;
+  padding-left: 26rpx;
+}
+.info .name {
+  font-size: 34rpx;
+  margin-bottom: 5rpx;
+}
+.info .artist {
+  font-size: 28rpx;
+  color: #666;
+}
+.icon{
+  width: 32rpx;
+  margin-right: 5rpx;
+}

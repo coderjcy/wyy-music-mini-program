@@ -1,0 +1,9 @@
+
+<view class="song-item" bindtap='onSongClick'>
+  <image class='song-img' mode="widthFix" src="{{musicInfo.al.picUrl}}"></image>
+  <view class="info">
+    <view class='song-name'>{{musicInfo.name}}</view>
+    <view class='artist'>{{musicInfo.ar[0].name}}</view>
+    <van-icon class="arrow" name="arrow" />
+  </view>
+</view>

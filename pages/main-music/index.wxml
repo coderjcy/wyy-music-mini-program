@@ -1,0 +1,52 @@
+<van-search 
+value="{{searchValue}}"
+background='#fafafa'
+placeholder='请输入搜索内容' shape='round'
+bind:click-input='searchClick'/>
+
+<swiper class="banners" circular indicator-dots style="height:{{imgHeight + 'px'}}">  
+  <block wx:for="{{banners}}" wx:key="id">
+    <swiper-item class="banner">
+      <image class="banner-img" src='{{item.imageUrl}}' bindload='imgLoad' mode="widthFix"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<header-area title='推荐歌曲' showMore='{{true}}' bindmoreClick='onMoreSongClick'></header-area>
+<view style="margin-bottom: 50rpx;">
+  <block wx:for="{{recommendMusic}}" wx:key="id">
+    <song-item-v1 data-index="{{index}}" bindtap="onSongClick" musicInfo="{{item}}"/>
+  </block>
+</view>
+<header-area title='热门歌单' showMore='{{true}}' bindmoreClick='onMoreSongListClick'></header-area>
+<scroll-view scroll-x class="song-list">
+  <block wx:for="{{songList1}}" wx:key="id">
+    <song-list-item class="song-list-item" listInfo="{{item}}"></song-list-item>
+  </block>
+</scroll-view>
+<header-area title='华语歌单' showMore='{{true}}' bindmoreClick='onMoreSongListClick'></header-area>
+<scroll-view scroll-x class="song-list">
+  <block wx:for="{{songList2}}" wx:key="id">
+    <song-list-item class="song-list-item" listInfo="{{item}}"></song-list-item>
+  </block>
+</scroll-view>
+<header-area title='排行榜' showMore='{{true}}' bindmoreClick=''></header-area>
+<ranking-item data-type="upRanking" bindtap="onRankingClick" rankingInfo="{{upRanking}}" />
+<ranking-item data-type="hotRanking" bindtap="onRankingClick" rankingInfo="{{hotRanking}}" />
+<ranking-item data-type="newRanking" bindtap="onRankingClick" rankingInfo="{{newRanking}}" />
+<ranking-item data-type="originRanking" bindtap="onRankingClick" rankingInfo="{{originRanking}}" />
+
+
+<view class="placeholder" wx:if="{{currentSong.name}}"></view>
+<view bindtap="onPlayBarClick" class="play-bar" wx:if="{{currentSong.name}}">
+  <view class="info">
+    <image style="animation-play-state: {{isPlaying?'running':'paused'}};" src='{{currentSong.al.picUrl}}' class="img"></image>
+    <view class="name"> {{currentSong.name}}</view>
+  </view>
+  <view class="tool" >
+    <image catchtap="changeMusicState" src="/assets/images/music/{{isPlaying?'pause':'play'}}_icon.png" class="tool-img"></image>
+    <image catchtap=""  src="/assets/images/music/playlist_icon.png" class="tool-img2"></image>
+  </view>
+</view>
+
+

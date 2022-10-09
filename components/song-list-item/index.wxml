@@ -1,0 +1,8 @@
+<wxs src='/utils/format.wxs' module='fmt'></wxs>
+
+<view bindtap="listClick">
+  <image class="img" mode="widthFix" src="{{listInfo.coverImgUrl}}">
+    <view class="play-count">{{fmt.formatCount(listInfo.playCount)}}</view>
+  </image>
+  <view class="title">{{listInfo.name}}</view>
+</view>

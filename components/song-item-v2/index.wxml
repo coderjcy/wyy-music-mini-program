@@ -1,0 +1,9 @@
+<view class="song-info" bindtap='onSongClick'>
+  <view class="index">{{index}}</view>
+  <view class="info">
+    <view class="name">{{songInfo.name}}</view>
+    <view class='artist'>
+    <image mode="widthFix" src="/assets/images/icons/sq_icon.png" class="icon"></image>
+    {{songInfo.ar[0].name}}</view>
+  </view>
+</view>

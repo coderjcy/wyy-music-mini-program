@@ -1,0 +1,65 @@
+page{
+  padding: 0 20rpx;
+  padding-top: 55px;
+}
+.search {
+  position: fixed;
+  top: 0;
+  left: 20rpx;
+  right: 20rpx;
+}
+
+
+/* 推荐搜索 */
+.hot {
+  padding: 10rpx;
+}
+.hot .keywords {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hot .keywords .keyword {
+  font-size: 26rpx;
+  background-color: #fff;
+  padding: 10rpx 12rpx;
+  border-radius: 16rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+}
+.hot .keywords .keyword:first-of-type{
+  color: #26ce8a
+}
+
+/* 猜你想搜 */
+.suggest {
+  margin-top: 10rpx;
+  padding: 10rpx;
+}
+.suggest .title {
+  font-size: 38rpx;
+  font-weight: 900;
+  color: #26ce8a;
+}
+.suggest .list {
+  padding: 20rpx 0;
+}
+.suggest .list .list-item {
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: center
+}
+.suggest .list .list-item .text{
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.suggest .list .list-item .icon{
+  width: 60rpx;
+  margin-right: 4rpx;
+}
+
+.result .title {
+  color: #26ce8a;
+  font-size: 34rpx;
+  margin-bottom: 30rpx;
+}

@@ -1,0 +1,10 @@
+<view class="header">
+  <view class="left">
+
+  {{title}}
+  </view>
+  <view wx:if="{{showMore}}" class="right" bindtap='moreClck'>
+      更多
+    <van-icon name="arrow" />
+  </view>
+</view>

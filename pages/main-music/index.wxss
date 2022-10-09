@@ -1,0 +1,97 @@
+page {
+  --search-background-color: #fff;
+  --search-padding: 10px 0;
+  box-sizing: border-box;
+  padding: 0 24rpx;
+}
+.banner{
+  border-radius: 10rpx;
+}
+.banners .banner-img{
+  width: 100%;
+  position: relative;
+}
+.banners .banner-img .play-count {
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+  color: #fff;
+}
+.song-list{
+  width: 100vw;
+  margin-left: -24rpx;
+  white-space: nowrap;
+
+}
+
+.song-list-item{
+  display: inline-block;
+  width: 25%;
+  margin-left: 24rpx;
+  vertical-align: top;
+}
+
+.song-list-item:last-child{
+  border-right: 24rpx solid transparent;
+}
+
+.placeholder{
+  height: 44px;
+}
+.play-bar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  background-color: #fff;
+
+  box-shadow: 0px -1px 10px #ddd;
+}
+.play-bar .info{
+  display: flex;
+  align-items: center;
+}
+.play-bar .info .img{
+  flex-shrink: 0;
+  position: relative;
+  top: -10px;
+  left: -2px;
+  width: 38px;
+  height: 38px;
+  animation: rotate-img 8s infinite linear ;
+  border-radius: 50%;
+  animation-play-state: running;
+
+}
+@keyframes rotate-img{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+
+  }
+}
+.play-bar .name{
+  margin-left: 8px;
+  font-size: 30rpx;
+}
+.tool {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+.tool-img{
+  width: 27px;
+  height: 27px;
+}
+.tool-img2{
+  width: 35px;
+  height: 35px;
+  margin-left: 12rpx;
+}

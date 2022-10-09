@@ -1,0 +1,26 @@
+
+ .img{
+  position: relative;
+   
+  width: 100%;
+  border-radius: 12rpx;
+}
+.play-count{
+  position: absolute;
+  bottom: 5rpx;
+  right: 6rpx;
+  padding: 3rpx 8rpx;
+  color: #fff;
+  background-color: #0006;
+  border-radius: 6rpx;
+  font-size: 22rpx;
+}
+.title{
+  font-size: 25rpx;
+  white-space: normal;
+  overflow: hidden; 
+  text-overflow: hidden; 
+  display: -webkit-box; 
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient:vertical;
+}

@@ -1,0 +1,9 @@
+<view>
+  <list-header songInfo='{{musicList}}' wx:if="{{id}}"/>
+  <view wx:else class="title">{{musicList.name}}</view>
+  <view style="margin-top: 40rpx; padding-left: 24rpx;">
+    <block wx:for="{{musicList.tracks}}" wx:key="id">
+      <song-item-v2 data-index="{{index}}" bindtap="onSongClick" songInfo="{{item}}" index='{{index+1}}' />
+    </block>
+  </view>
+</view>

@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/main-music/index",
+    "pages/main-video/main-video",
+    "pages/search-detail/index",
+    "pages/song-list-detail/index",
+    "pages/song-list-more/index"
+  ],
+  "subPackages": [
+    {
+      "root": "packageVideo",
+      "name": "video",
+      "pages":[
+        "pages/video-detail/video-detail"
+      ]
+    },
+    {
+      "root": "packagePlayer",
+      "name": "player",
+      "pages":[
+        "pages/song-detail/index"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "网易云音乐",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main-music/index",
+        "text": "音乐",
+        "iconPath": "/assets/images/tabbar/music_normal.png",
+        "selectedIconPath": "/assets/images/tabbar/music_active.png"
+      },
+      {
+        "pagePath": "pages/main-video/main-video",
+        "text": "视频",
+        "iconPath": "/assets/images/tabbar/video_normal.png",
+        "selectedIconPath": "/assets/images/tabbar/video_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

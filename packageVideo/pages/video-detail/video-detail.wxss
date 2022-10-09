@@ -1,0 +1,57 @@
+.video {
+  width: 100%;
+  vertical-align: top;
+}
+
+.content {
+  height: calc(100vh - 225px);
+}
+.img{
+  position: relative;
+  border-radius: 12rpx;
+}
+.img  .count{
+  font-size: 24rpx;
+  position: absolute;
+  color: #fff;
+  bottom: 5rpx;
+  right: 10rpx;
+}
+.infos{
+  padding: 20rpx;
+  color: #555;
+  font-size: 26rpx;
+}
+.infos .title{
+  color: #000;
+  font-size: 36rpx;
+  font-weight: 800;
+}
+.simi-mvs{
+  padding: 10rpx;
+}
+.simi-item{
+  display: flex;
+  padding: 10rpx 0;
+}
+.simi-item .img{
+  width: 35%;
+}
+
+.simi-item .info{
+  flex: 1;
+  padding: 6rpx 20rpx;
+
+}
+.simi-item .info .title{
+  font-size: 30rpx;
+  overflow: hidden; 
+  text-overflow: hidden; 
+  display: -webkit-box; 
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient:vertical;
+}
+.simi-item .info .name{
+  color: #555;
+  font-size: 24rpx;
+}

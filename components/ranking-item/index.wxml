@@ -1,0 +1,17 @@
+<wxs src='/utils/format.wxs' module="fmt"></wxs>
+<view class="ranking">
+  <view class="song-info">
+    <view class="title">{{rankingInfo.name}}</view>
+    <block wx:for="{{3}}" wx:for-item="v" wx:key="id">
+      <view class="song-name">
+        <text class="index">{{v+1}}</text>
+        {{rankingInfo.tracks[v].name}} 
+        <text class="artist">- {{rankingInfo.tracks[v].ar[0].name}}</text>
+      </view>
+    </block>
+  </view>
+  <image class="img"  src='{{rankingInfo.coverImgUrl}}'>
+    <view class="play-count">{{fmt.formatCount(rankingInfo.playCount)}}</view>
+  </image>
+
+</view>

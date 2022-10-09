@@ -1,0 +1,32 @@
+<wxs src='/utils/format.wxs' module="fmt"> </wxs>
+<video 
+  class="video" 
+  autoplay
+  src="{{url}}" 
+  danmu-list="{{danmuList}}"
+  danmu-btn
+  referrer-policy="origin"
+/>
+
+<scroll-view class="content" scroll-y>
+  <view class="infos">
+    <view class="title">{{ mvInfo.name }}</view>
+    <view>{{ mvInfo.artistName }}</view>
+    <view>{{fmt.formatCount(mvInfo.playCount)}} - {{mvInfo.publishTime}}</view>
+  </view>
+  <view class="simi-mvs">
+    <view style="padding-left: 10rpx;padding-bottom: 15rpx;">相关视频</view>
+    <block wx:for="{{simiMvs}}" wx:key="id">
+      <view class="simi-item">
+        <image class="img" src="{{item.cover}}" mode="widthFix">
+          <view class="count">{{fmt.formatCount(item.playCount)}}</view>
+        </image>
+        <view class="info">
+          <view class="title">{{item.name}}</view>
+          <view class="name">{{item.artistName}}</view>
+        </view>
+       
+      </view>
+    </block>
+  </view>
+</scroll-view>

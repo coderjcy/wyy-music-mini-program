@@ -1,0 +1,25 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@vant/weapp': ^1.10.5
+  hy-event-store: ^1.2.1
+  underscore: ^1.13.6
+
+dependencies:
+  '@vant/weapp': 1.10.5
+  hy-event-store: 1.2.1
+  underscore: 1.13.6
+
+packages:
+
+  /@vant/weapp/1.10.5:
+    resolution: {integrity: sha512-bAHp9r0ZiRsOqPOLzQHI/ZvkAlXzol1/TFhM70MyghuxkzJTjcDUd8RIfLkCN3c1MCK/PfBGw2an8/afygftCg==}
+    dev: false
+
+  /hy-event-store/1.2.1:
+    resolution: {integrity: sha512-viMS7Zj1VmFgkAENrJr0lMV29FWzaSgLg1gTcZ+WJXuPO+SOhehWqALoJIDGms02qG+tO+++VsPkgD0rXlAikA==}
+    dev: false
+
+  /underscore/1.13.6:
+    resolution: {integrity: sha512-+A5Sja4HP1M08MaXya7p5LvjuM7K6q/2EaC0+iovj/wOcMsTzMvDFbasi/oSapiwOlt252IqsKqPjCl7huKS0A==}
+    dev: false

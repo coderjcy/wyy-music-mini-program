@@ -1,0 +1,28 @@
+.song-item{
+display: flex;
+margin-bottom: 20rpx;
+}
+.song-img{
+  width: 18%;
+  border-radius: 12rpx;
+}
+.info{
+  flex: 1;
+  position: relative;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+}
+.song-name{
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+}
+.artist{
+  font-size: 26rpx;
+  color: #888
+}
+.arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}

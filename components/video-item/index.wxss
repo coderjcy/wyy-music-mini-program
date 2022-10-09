@@ -1,0 +1,27 @@
+.video-item{
+  padding-bottom: 24rpx;
+}
+.img {
+  width: 100%;
+  border-radius: 15rpx;
+  position: relative;
+}
+.name{
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: hidden;
+  display: -webkit-box; 
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient:vertical;
+}
+.count{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 10rpx;
+  font-size: 24rpx;
+  width: 100%;
+  padding: 0 16rpx;
+  box-sizing: border-box;
+  color: #fff;
+}

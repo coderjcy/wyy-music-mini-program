@@ -1,0 +1,12 @@
+<view class="all-list">
+  <block wx:for="{{songListInfo}}" wx:key="cat">
+    <header-area title="{{item.cat}}"></header-area>
+    <view class="list">
+      <block wx:for="{{item.playlists}}"  wx:key="id" wx:for-item="item2">
+      <view class="list-item">
+        <song-list-item class="list-item" listInfo="{{item2}}"></song-list-item>
+      </view>
+      </block>
+    </view>
+  </block>
+</view>
